@@ -331,24 +331,85 @@ header
         text-align: center
         line-height: 68px
         text-transform: uppercase
+        &:hover
+            color: #1fbad6
 .footer
-    min-height: 143px
+    min-height: 156px
+    border-bottom: 8px solid #000
     display: flex
-    .container
+    flex-direction: column
+    align-items: center
+    padding: 14px 0 31px 0
+    &_devider
+        height: 4px
+        width: 300px
+        background-color: #1fbad6
+        margin-bottom: 34px
+    .wraper
         display: flex
-        flex-direction: row
-        align-items: center
         justify-content: space-between
-        
-    &_social
-        display: flex
-        a
+        width: 100%
+        padding: 0 49px 0 25px
+        div
             display: flex
-            align-items: center
-            justify-content: center
-            background-color: #000000
-            width: 32px
-            height: 32px
-            margin-right: 7px
-            border-radius: 100%
+            width: 33%
+            &:nth-child(3)
+                justify-content: flex-end   
+        .footer_social
+            width: 160px
+            display: flex
+            justify-content: space-between
+            &_item
+                background-color: #000000
+                width: 32px
+                height: 32px
+                border-radius: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                transition: 0.3s all
+                span
+                    color: #ffffff
+                    &:hover
+                        color: $icon
+        .footer_content
+            display: flex
+            flex-direction: column
+            width: 100%
+            &_link
+                display: flex
+                width: 100%
+                justify-content: space-around
+                &_item
+                    font-size: 15px
+                    font-weight: 300
+                    color: #070716
+                    text-transform: uppercase
+            &_sublink
+                margin-top: 15px
+                display: flex
+                width: 100%
+                justify-content: space-between
+                &_item
+                    font-size: 11px
+                    font-weight: 300
+                    color: #999999
+                    text-transform: uppercase
+            &_lenguage
+                margin-top: 19px
+                width: 100%
+                a
+                    display: block
+                    margin: 0 auto
+                    font-size: 11px
+                    color: #1fbad6
+                    text-align: right
+                    text-transform: uppercase
+        .footer_app
+            display: flex
+            width: 100%
+            justify-content: flex-end
+            a
+                margin-left: 7px
         
+            
